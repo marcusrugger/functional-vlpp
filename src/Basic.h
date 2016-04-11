@@ -94,8 +94,8 @@ namespace vl
 
 //#define INCRC(x)	(__sync_add_and_fetch(x, 1))
 //#define DECRC(x)	(__sync_sub_and_fetch(x, 1))
-#define INCRC(x)	++(*x)
-#define DECRC(x)	--(*x)
+#define INCRC(x)	(++(*x))
+#define DECRC(x)	(--(*x))
 
 
 /***********************************************************************
